@@ -1,6 +1,6 @@
 {
   "name": "three-dragger",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "Drag three.js objects without modifying the original's position",
   "main": "dist/three-dragger.umd.js",
   "jsnext:main": "dist/three-dragger.esm.js",
