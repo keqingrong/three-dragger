@@ -4,7 +4,7 @@
 
 > Drag three.js objects like [THREE.DragControls](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/DragControls.js) without modifying the original's position
 
-Live demo available at [here](https://rawgit.com/keqingrong/three-dragger/master/example/).
+Live demo available at <a href="https://rawgit.com/keqingrong/three-dragger/master/example/" target="_blank">here</a>.
 
 ## Installation
 
