@@ -68,9 +68,7 @@ function init() {
       target,
       position
     } = data;
-    if (target) {
-      target.position.set(position.x, position.y, position.z);
-    }
+    target.position.set(position.x, position.y, position.z);
   });
   mouseDragger.on('dragend', function (data) {
     controls.enabled = true;

@@ -4,26 +4,31 @@ import babel from 'rollup-plugin-babel';
 import eslint from 'rollup-plugin-eslint';
 import pascalcase from 'pascalcase';
 import {
-  name as moduleName
+  author,
+  name,
+  version
 } from './package.json';
 
 const isWatchMode = !!process.env.ROLLUP_WATCH;
+const banner = `/* @license ${name} v${version} | (c) ${author} */`;
 
 const config = {
   input: 'src/index.js',
   output: [{
-      file: `dist/${moduleName}.esm.js`,
+      file: `dist/${name}.esm.js`,
       format: 'es',
-      sourcemap: true
+      sourcemap: true,
+      banner: banner
     },
     {
-      file: `dist/${moduleName}.umd.js`,
-      name: pascalcase(moduleName),
+      file: `dist/${name}.umd.js`,
+      name: pascalcase(name),
       format: 'umd',
       globals: {
         three: 'THREE'
       },
-      sourcemap: true
+      sourcemap: true,
+      banner: banner
     }
   ],
   plugins: [

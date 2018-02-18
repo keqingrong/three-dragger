@@ -5,6 +5,7 @@
   "main": "dist/three-dragger.umd.js",
   "jsnext:main": "dist/three-dragger.esm.js",
   "module": "dist/three-dragger.esm.js",
+  "unpkg": "dist/three-dragger.umd.min.js",
   "files": [
     "dist"
   ],
@@ -17,14 +18,14 @@
     "open": "opn http://localhost:3000/example",
     "serve": "serve -p=3000 ./",
     "start": "npm-run-all -p watch serve open",
-    "uglify": "uglifyjs dist/three-dragger.umd.js -c -m -o dist/three-dragger.umd.min.js"
+    "uglify": "uglifyjs dist/three-dragger.umd.js --comments -c -m -o dist/three-dragger.umd.min.js"
   },
   "keywords": [
     "drag",
     "three",
     "three.js"
   ],
-  "author": "keqingrong <keqingrong1992@gmail.com> (https://keqingrong.github.io/)",
+  "author": "Qingrong Ke <keqingrong1992@gmail.com> (https://keqingrong.github.io/)",
   "repository": "keqingrong/three-dragger",
   "license": "MIT",
   "devDependencies": {

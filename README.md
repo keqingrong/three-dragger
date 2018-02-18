@@ -24,9 +24,7 @@ mouseDragger.on('dragstart', function (data) {
 
 mouseDragger.on('drag', function (data) {
   const { target, position } = data;
-  if (target) {
-    target.position.set(position.x, position.y, position.z);
-  }
+  target.position.set(position.x, position.y, position.z);
 });
 
 mouseDragger.on('dragend', function (data) {
