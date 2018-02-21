@@ -3,11 +3,7 @@ import {
 } from 'three';
 
 const isFunction = (object) => (typeof object === 'function');
-const isEmptyArray = (object) => {
-  if (Array.isArray(object) && object.length === 0) {
-    return true;
-  }
-};
+const isEmptyArray = (object) => (Array.isArray(object) && object.length === 0);
 
 /**
  * Normalize a number to [-1,1]
