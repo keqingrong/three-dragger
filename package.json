@@ -15,8 +15,8 @@
     "watch": "rollup -w -c",
     "lint": "eslint --ext .js src/",
     "lint-fix": "eslint --fix --ext .js src/",
-    "open": "opn http://localhost:3000/example",
-    "serve": "serve -p=3000 ./",
+    "open": "opn http://localhost:3000/example/",
+    "serve": "serve -l 3000 ./",
     "start": "npm-run-all -p watch serve open",
     "uglify": "uglifyjs dist/three-dragger.umd.js --comments -c -m -o dist/three-dragger.umd.min.js"
   },
@@ -45,7 +45,8 @@
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-eslint": "^4.0.0",
     "rollup-plugin-node-resolve": "^3.0.3",
-    "serve": "^6.4.10",
+    "serve": "^7.0.0",
+    "three": "^0.80.0",
     "uglify-es": "^3.3.10"
   },
   "peerDependencies": {
