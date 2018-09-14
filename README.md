@@ -12,6 +12,11 @@ Live demo available at [here](https://rawgit.com/keqingrong/three-dragger/master
 npm install --save three-dragger
 ```
 
+The CDN build is also available on unpkg:
+
+- [unpkg.com/three-dragger@1/dist/three-dragger.umd.js](https://unpkg.com/three-dragger@1/dist/three-dragger.umd.js)
+- [unpkg.com/three-dragger@1/dist/three-dragger.umd.min.js](https://unpkg.com/three-dragger@1/dist/three-dragger.umd.min.js)
+
 ## Usage
 
 ```js
