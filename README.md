@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/three-dragger.svg)](https://www.npmjs.com/package/three-dragger)
 
-> Drag three.js objects like [THREE.DragControls](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/DragControls.js) without modifying the original's position
+> Drag three.js objects (including [Group](https://threejs.org/docs/#api/en/objects/Group)) like [THREE.DragControls](https://github.com/mrdoob/three.js/blob/dev/examples/js/controls/DragControls.js), but without modifying the original position.
 
 Live demo available at [here](https://keqingrong.github.io/three-dragger/example/).
 
