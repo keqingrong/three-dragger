@@ -116,7 +116,7 @@ class MouseDragger extends EventEmitter {
 
   /**
    * Ray cast
-   * @param {Vector2} - mouse
+   * @param {Vector2} mouse - coordinates of the mouse
    * @returns {Object3D|null} - intersected object
    */
   rayCast(mouse) {

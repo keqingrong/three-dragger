@@ -33,7 +33,7 @@ const getMouseNDCPosition = (event, container) => {
     width: window.innerWidth,
     height: window.innerHeight
   };
-  // the contanier is Element type
+  // the container is Element type
   if (container && isFunction(container.getBoundingClientRect)) {
     Object.assign(rect, container.getBoundingClientRect());
   }
