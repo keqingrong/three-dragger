@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>three-dragger example</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+<script src="https://unpkg.com/three@0.127.0/build/three.min.js"></script>
+<script src="https://unpkg.com/three@0.127.0/examples/js/controls/TrackballControls.js"></script>
+<script src="https://unpkg.com/three@0.127.0/examples/js/libs/stats.min.js"></script>
+<script>
+  if (location.href.indexOf('localhost') !== -1) {
+    document.write('<script src="http://localhost:3000/dist/three-dragger.umd.js" type="text/javascript"><\/script>');
+  } else {
+    document.write('<script src="https://unpkg.com/three-dragger" type="text/javascript"><\/script>');
+  }
+</script>
+<script src="./index-0.127.js"></script>
+</body>
+</html>
