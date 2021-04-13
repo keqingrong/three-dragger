@@ -198,7 +198,9 @@ class MouseDragger extends EventEmitter {
       // Begin to drag the object
       if (self.dragging === false) {
         // Create a plane with the camera's world space direction (as a normal) and a coplanar point
-        self.plane.setFromNormalAndCoplanarPoint(self.camera.getWorldDirection(), self.selected.position);
+        var camerasWorldDirection = new Vector3();
+        self.camera.getWorldDirection(camerasWorldDirection);
+        self.plane.setFromNormalAndCoplanarPoint(camerasWorldDirection, self.selected.position); // Calculate the offset between the mouse and the center of the selected object
 
         // Calculate the offset between the mouse and the center of the selected object
         self.raycaster.setFromCamera(self.mouse, self.camera);
